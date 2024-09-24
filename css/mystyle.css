@@ -3,49 +3,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.profile-body{
-    padding-top: 76px;
-}
-
-.navbar-toggler-icon{
-    width: 20px;
-    height: 25px;
-}
-.img-fluid{
-    width: 100px;
-    height: 55px;
-}
-
-.space{
-    height: 100px;
-}
-.pages{
-    padding-top: 150px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue' , 'Poppins' , sans-serif;
 }
 body{
     min-height: 100vh;
     background:#fff;
     margin: 0;
 }
-#navbar{
-  text-align: center;
-}
-.profile-logo{
-    width: 18rem;
-    cursor: pointer;
-    padding: 20px 0;
-}
 
+/*------------------------------NAVBAR-------------------------------*/
+.navbar-toggler-icon{
+    width: 20px;
+    height: 25px;
+}
 .logo{
     width: 90px;
     cursor: pointer;
     display: flex;
     justify-self: center;
 }
-
 .bi{
     display: flex;
     justify-content: space-evenly;
@@ -56,23 +32,38 @@ body{
 .navbar{
     background-color:#06283D;
 }
-.navbar-scrolled {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.navbar{
-    transition: all 0.8s;
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -ms-transition: all 0.8s;
-    -o-transition: all 0.8s;
-}
-
 .second-nav{
     height: 70px;
 }
 
+.nav2{
+    color: white;
+    font-size: larger;
+}
 
+.offcanvas{
+    --bs-offcanvas-width: 800px;
+}
+.offcanvas-body ul li a:hover {
+    color: #ffffff;
+  }
+
+/*------------------------------NAVBAR-------------------------------*/
+
+/*------------------------------FOOTER-------------------------------*/
+.foot{
+    background: #06283D;
+}
+h5{
+    color: white;
+    margin-top: 50px;
+}
+footer ul li a{
+    text-decoration: none;
+}
+/*------------------------------FOOTER-------------------------------*/
+
+/*------------------------------MEDIA QUERY-------------------------------*/
 
 @media(min-width: 575px),(min-width: 991px){
     .sidebar{
@@ -125,12 +116,12 @@ body{
         height: 15px;
         margin-left: 0;
     }
+    .space-owner-prof{
+        width: 25px;
+        height: 25px;
+        margin-left: 0;
+    }
 }
-.nav2{
-    color: white;
-    font-size: larger;
-}
-
 @media(max-width: 414px){
     .offcanvas{
         --bs-offcanvas-width: 415px;
@@ -142,115 +133,306 @@ body{
         --bs-offcanvas-width: 800px;
     }
     .logo{
-        margin-right: 48px;
+        margin-right: 15px;
     }
 }
-.nav2{
-    color: white;
-    font-size: larger;
-}
+/*------------------------------MEDIA QUERY-------------------------------*/
 
-
-
-.offcanvas{
-    --bs-offcanvas-width: 800px;
-}
-
-.b-example-divider{
-    height: 10rem;
-}
-
-.foot{
-    background: #06283D;
-
-}
-h5{
-    color: white;
-    margin-top: 50px;
-}
-
-.social-icons{
-    background: #47B5FF;
-}
-
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
+/*------------------------------ADMIN-LOGIN-------------------------------*/
+.login-body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+  }
+.form-signin {
     width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-right: auto;
-    margin-left: auto;
-}
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  }
+  
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  /*------------------------------ADMIN-LOGIN-------------------------------*/
 
-footer ul li a{
-    text-decoration: none;
-}
-/*------------------------------------------------------------------------------------------------------------------*/
-body {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+
+  /*------------------------------FAQS------------------------------*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); 
+  .wrapper {
+      max-width: 760px;
+      margin: 50px auto;
+      padding: 100px 60px;
+  }  
+  .wrapper .accordion-button {
+      font-size: 0.9rem;
+      font-weight: 500;
   }
   
-  html {
-    height: -webkit-fill-available;
+  .wrapper .accordion-button:hover {
+      background-color: #f8f8f8;
   }
   
-  main {
+  .wrapper .accordion-button:focus {
+      box-shadow: none;
+  }
+  
+  .wrapper .accordion-button::after {
+      background-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #c8c8c8;
+      background-position: center center;
+      border-radius: 50%;
+  }
+  
+  .wrapper .accordion-button:not(.collapsed) {
+      color: #000;
+      background-color: #f7f7f7;
+      font-weight: 600;
+      border-bottom: 1px solid #ddd !important;
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+      border-color: #1E88E5;
+  }
+  
+  .wrapper .accordion-button.collapsed {
+      border-bottom: 1px solid #ddd !important;
+  }
+  
+  .wrapper .accordion-collapse.show {
+      border-bottom: 1px solid #ddd !important;
+  }
+  
+  .wrapper .accordion-collapse {
+      background-color: #eaf3fa;
+  }
+  
+  .wrapper .accordion-collapse ul li {
+      line-height: 2rem;
+      width: 100%;
+      padding: 0.5rem 1.3rem;
+  }
+  
+  .wrapper .accordion-collapse ul li:hover {
+      background-color: #c9e7ff;
+  }
+  
+  .wrapper .accordion-collapse ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 0.85rem;
+      font-weight: 400;
+      display: block;
+  }
+  
+  .wrapper .accordion-collapse ul li:hover a {
+      color: #222;
+  }
+  
+  @media (max-width: 777px) {
+      .wrapper {
+          margin: 50px 20px;
+      }
+  }
+  
+  @media (max-width: 365px) {
+      .wrapper {
+          margin: 50px 10px;
+      }
+  
+      .w-75 {
+          width: 90% !important;
+      }
+  }
+  
+ /*------------------------------FAQS------------------------------*/
+
+ .faq-body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+ }
+  /*------------------------------FAQS------------------------------*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@200&display=swap');
+
+/*LANDING PAGE*/
+
+.background-container {
+    background-image: url("/images/bg-edited.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
-    height: -webkit-fill-available;
-    max-height: 100vh;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-  
-  .dropdown-toggle { outline: 0; }
-  
-  .btn-toggle {
-    padding: .25rem .5rem;
-    font-weight: 600;
-    color: var(--bs-emphasis-color);
-    background-color: transparent;
-  }
-  .btn-toggle:hover,
-  .btn-toggle:focus {
-    color: rgba(var(--bs-emphasis-color-rgb), .85);
-    background-color: var(--bs-tertiary-bg);
-  }
-  
-  .btn-toggle::before {
-    width: 1.25em;
-    line-height: 0;
-    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
-    transition: transform .35s ease;
-    transform-origin: .5em 50%;
-  }
-  
-  [data-bs-theme="dark"] .btn-toggle::before {
-    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
-  }
-  
-  .btn-toggle[aria-expanded="true"] {
-    color: rgba(var(--bs-emphasis-color-rgb), .85);
-  }
-  .btn-toggle[aria-expanded="true"]::before {
-    transform: rotate(90deg);
-  }
-  
-  .btn-toggle-nav a {
-    padding: .1875rem .5rem;
-    margin-top: .125rem;
-    margin-left: 1.25rem;
-  }
-  .btn-toggle-nav a:hover,
-  .btn-toggle-nav a:focus {
-    background-color: var(--bs-tertiary-bg);
-  }
-  
-  .scrollarea {
-    overflow-y: auto;
-  }
-
-#offcanvas{
-    width: 160px;
 }
+
+.bc-text {
+    margin-right: 20rem;
+}
+
+.btn-join {
+    width: fit-content;
+}
+
+.section-two img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.section-three img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.btn-find {
+    width: fit-content;
+}
+
+/*LANDING PAGE*/
+
+/*BROWSE PAGE*/
+
+.lot-name {
+    display: -webkit-box;
+    border-bottom: 1px solid lightgray;
+}
+
+.ls-space-owner-profile {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid #DFF6FF;
+}
+
+.ls-section-one {
+    border-bottom: 1px solid lightgray;
+}
+
+@media(min-width: 414px) {
+    .space-owner-info {
+        justify-content: center;
+    }
+}
+
+/*BROWSE PAGE*/
+
+/*PROFILE PAGE*/
+
+.profile-section-one {
+    width: 100%;
+    height: 50vh;
+    background-color: #47B5FF;
+}
+
+.profile-picture {
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid #DFF6FF;
+}
+
+.parkit-wallet-container {
+    border-bottom: 1px solid lightgray;
+}
+
+.p-amount {
+    background-color: rgba(71, 181, 255, 0.5);
+    width: 3.5rem;
+    height: 1.5rem;
+}
+
+.p-view-profile, .p-my-reviews, .p-my-vehicle, .p-my-rentals, .p-history, .p-help-center {
+    display: -webkit-box;
+}
+
+.p-help-center {
+    border-bottom: 1px solid lightgray;
+}
+
+.parkit-wallet-container:hover, .p-view-profile:hover, .p-my-reviews:hover, .p-my-vehicle:hover, .p-my-rentals:hover, .p-history:hover, .p-help-center:hover, .p-settings:hover, .p-terms-condition-privacy:hover, .p-switch-to-space-owner:hover, .p-logout:hover {
+    background-color: rgba(83, 83, 83, 0.1);
+}
+
+.p-switch-to-space-owner {
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+.p-lists-container p {
+    color: #06283D;
+}
+
+/*PROFILE PAGE*/
+
+/*PARKING LOT SPACE PAGE*/
+
+.ls-hourly, .ls-daily, .ls-weekly, .ls-monthly {
+    border: 1px solid lightgray;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.ls-base-rate {
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.ls-small-text {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.ls-descriptions, .ls-cash {
+    display: -webkit-box;
+}
+
+.gcash-img {
+    width: 8rem;
+    height: 5rem;
+}
+
+.dropdown .btn {
+    border: 1px solid #06283D;
+    color: #06283D;
+}
+
+.ls-motorcycles {
+    border: 1px solid #06283D;
+    border-radius: 1rem;
+}
+
+/*PARKING LOT SPACE PAGE*/
+
+/*GETTING SPACE PAGE*/
+
+.gs-get-space {
+    display: -webkit-box;
+}
+
+/*GETTING SPACE PAGE*/
